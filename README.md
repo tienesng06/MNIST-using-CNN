@@ -12,7 +12,7 @@ The model uses a VGG-style CNN. The `CNN_Model.png` diagram is the high-level fl
 
 ![CNN Model Architecture](./CNN_Model.png)
 
-Implementation note: the actual code in `src/model.py` includes a `MaxPool2d` after `Conv3` and an `AdaptiveAvgPool2d(4, 4)` before flattening, so the feature vector is always `128 x 4 x 4 = 2048` before `FC1`.
+**Implementation note**: the actual code in `src/model.py` includes a `MaxPool2d` after `Conv3` and an `AdaptiveAvgPool2d(4, 4)` before flattening, so the feature vector is always `128 x 4 x 4 = 2048` before `FC1`.
 
 Detailed architecture (implemented in code):
 
